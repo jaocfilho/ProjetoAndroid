@@ -6,21 +6,28 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@color/background"
         android:orientation="horizontal"
         android:padding="8dp"
         android:gravity="center">
 
+        <View
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/transaction_label"
+            android:backgroundTint="@color/green"/>
+
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="3">
+            android:layout_weight="2">
             <TextView
                 android:id="@+id/institution"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nubank"
                 android:textColor="@color/white"
@@ -28,21 +35,37 @@
 
             <TextView
                 android:id="@+id/date"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="16/11/2021"
                 android:textColor="@color/gray"
                 android:textSize="12sp" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/amount"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/green_light"
-            android:layout_weight="8"
-            android:textSize="18sp"
-            android:text="R$ 2.000,00" />
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginEnd="16dp"
+                android:text="R$" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="2.000,00" />
+        </LinearLayout>
 
     </LinearLayout>
 
