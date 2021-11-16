@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="green">#1EB980</color>
+    <color name="green_light">#00E676</color>
     <color name="green_dark">#045D56</color>
     <color name="orange">#FF6859</color>
     <color name="yellow">#FFCF44</color>
@@ -8,6 +9,7 @@
     <color name="blue">#72DEFF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background">#606060</color>
-    <color name="background_dark">#3c3c3c</color>
+    <color name="gray">#F5F5F5</color>
+    <color name="background">#424242</color>
+    <color name="background_dark">#212121</color>
 </resources>
