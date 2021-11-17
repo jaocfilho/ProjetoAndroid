@@ -5,8 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.projetobloco.transaction.TransactionViewModel
 
-class CustomAdapter(private val dataSet: List<TransactionModel>) :
+class CustomAdapter(private val dataSet: List<TransactionViewModel>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
