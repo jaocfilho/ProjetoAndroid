@@ -33,6 +33,14 @@
             android:textColorHighlight="@color/green"
             android:autofillHints="name" />
 
+        <EditText
+            android:hint="@string/amount_form_hint"
+            android:id="@+id/amount_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColorHighlight="@color/green" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,12 +53,14 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/background_dark"
                 android:layout_marginEnd="16dp"
+                android:textColor="@color/white"
                 android:text="@string/transaction_form_cancel_button"/>
 
             <Button
                 android:id="@+id/confirm_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/background_dark"
                 android:text="@string/transaction_form_confirm_button"/>
         </LinearLayout>

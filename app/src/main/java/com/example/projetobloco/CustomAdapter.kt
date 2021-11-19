@@ -5,13 +5,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projetobloco.transaction.TransactionViewModel
+import com.example.projetobloco.database.Transaction
 
-class CustomAdapter(private val dataSet: List<TransactionViewModel>) :
+class CustomAdapter(private val dataSet: ArrayList<Transaction>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var card: TextView? = view.findViewById<TextView>(R.id.institution)
+        var institution: TextView? = view.findViewById<TextView>(R.id.institution)
+        var amount: TextView? = view.findViewById<TextView>(R.id.amount)
 
     }
     // Create new views (invoked by the layout manager)
@@ -27,7 +28,8 @@ class CustomAdapter(private val dataSet: List<TransactionViewModel>) :
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.card?.text = dataSet[position].institution
+        viewHolder.institution?.text = dataSet[position].institution
+        viewHolder.amount?.text = dataSet[position].amount.toString()
     }
 
     // Return the size of your dataset (invoked by the layout manager)
